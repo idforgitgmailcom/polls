@@ -1,0 +1,5 @@
+<ul>
+	{% for book in object_list %}
+		<li><a href="{% url 'bms:book' pk=book.pk %}">{{ book.title }}</a></li>
+	{% endfor %}
+</ul>

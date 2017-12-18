@@ -1,0 +1,11 @@
+<p>{{ object.title }}</p>
+<p>
+{% for author in object.authors.all %}
+	{{ author }}
+	{% if not forloop.last %}
+	,
+	{% endif %}
+{% endfor %}
+</p>
+<p>{{ object.publisher }}</p>
+<p>{{ object.publication_date }}</p>
